@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: supermario-service
+  namespace: superbai
+  labels:
+    tag: argocd-app
+spec:
+  ports:
+  - name: supermario
+    protocol: TCP
+    port: 8080
+  selector:
+    tag: argocd-app
