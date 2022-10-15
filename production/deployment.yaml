@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: supermario
-  namespace: develop
+  namespace: production
 spec:
   selector: 
     matchLabels:
@@ -12,7 +12,7 @@ spec:
     metadata:
       labels:
         tag: argocd-app
-        env: devlop
+        env: production
     spec:
       containers:
       - name: supermario

@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argo-application
+  name: argo-production
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/newdeal123/argoCD-app-config.git
     targetRevision: HEAD
-    path: develop
+    path: production
   destination:
     server: https://kubernetes.default.svc
-    namespace: superbai
+    namespace: production
   syncPolicy:
     syncOptions:
     - CreateNamespace=true

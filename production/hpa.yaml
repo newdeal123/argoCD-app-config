@@ -4,8 +4,8 @@ metadata:
   name: supermario-hpa
   labels:
     tag: argocd-app
-    env: devlop
-  namespace: develop
+    env: production
+  namespace: production
 spec:
   minReplicas: 1
   maxReplicas: 10
