@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: supermario
-        image: newdeal123/argocd-app:3
+        image: newdeal123/argocd-app:1
         ports:
         - containerPort: 8080 
 
