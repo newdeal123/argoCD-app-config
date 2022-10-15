@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/newdeal123/argoCD-app-config.git
     targetRevision: HEAD
-    path: dev
+    path: develop
   destination:
     server: https://kubernetes.default.svc
     namespace: superbai

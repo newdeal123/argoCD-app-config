@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: supermario
-        image: newdeal123/argocd-app:{Jenkins build number}
+        image: newdeal123/argocd-app:22
         ports:
         - containerPort: 8080 
 
